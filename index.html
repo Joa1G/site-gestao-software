@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relatório de Projeto - Equipe GOAT's</title>
+    <meta name="description" content="Relatório do projeto de Gestão de Produção e Qualidade de Software da Equipe GOAT's - Sistema de instrução processual para o IFAM">
+    <meta name="keywords" content="IFAM, gestão, qualidade software, instrução processual, equipe GOAT's">
+    <meta name="author" content="Equipe GOAT's">
+    <title>Relatório de Projeto - Equipe GOAT's | Sistema de Instrução Processual IFAM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/cabeca-de-cabra.png" type="image/png">
 </head>
 <body>
     <!-- Cabeçalho e Navegação -->
@@ -17,6 +21,18 @@
                 <img src="./images/cabeca-de-cabra.png" class="logo" alt="Logo da Equipe GOAT's">
                 <a href="#inicio">EQUIPE GOAT'S</a>
             </div>
+            <div class="nav-links">
+                <a href="#inicio">Início</a>
+                <a href="#equipe">Equipe</a>
+                <a href="#projeto">Projeto</a>
+                <!-- <a href="#artigo">Artigo</a>
+                <a href="#contato">Contato</a> -->
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </nav>
     </header>
 
@@ -24,8 +40,12 @@
         <!-- Seção Inicial -->
         <section id="inicio">
             <div class="container">
-                <h1>Relatório de Trabalho</h1>
-                <p>Documentação do processo de elaboração do trabalho da disciplina de Gestão de Produção e Qualidade de Software.</p>
+                <div class="hero-content">
+                    <h1>Relatório de Trabalho</h1>
+                    <p>Documentação do processo de elaboração do trabalho da disciplina de Gestão de Produção e Qualidade de Software.</p>
+                    <p class="hero-subtitle">Sistema de Instrução Processual para o IFAM</p>
+                    <a href="#equipe" class="btn-hero">Conheça a Equipe</a>
+                </div>
             </div>
         </section>
 
@@ -101,15 +121,82 @@
                         <div class="timeline-content">
                             <span>Semana 29 Ago - 12 Set</span>
                             <h3>Criação do 5W2H</h3>
-                            <p>
-                                <strong>- Why (Por quê?):</strong> Ter uma boa instrução processual no IFAM (Instituto Federal do Amazonas) é essencial para garantir que os processos administrativos, acadêmicos e institucionais ocorram de forma transparente, eficiente e padronizada, e com redução de falhas administrativas.<br>
-                                <strong>- What (O quê?):</strong> site com fluxogramas interativos e um chatbot de apoio para auxiliar na instrução processual e fluxo. <br>
-                                <strong>- Where (Onde?):</strong> Reitoria do IFAM. <br>
-                                <strong>- When (Quando?):</strong> Durante a disciplina de gestão de produção e qualidade. <br>
-                                <strong>- Who (Quem?):</strong> Identifica os responsáveis por executar a ação. <br>
-                                <strong>- How (Como?):</strong> Descreve o método, os meios e as etapas necessárias para realizar a ação. <br>
-                                <strong>- How much (Quanto?):</strong> O IFAM PAGA: 20 mil para cada desenvolvedor mensalmente. <br>
-                            </p>
+                            
+                            <div class="w2h-section">
+                                <div class="w2h-item">
+                                    <h4><strong>Why (Por quê?)</strong></h4>
+                                    <p>Ter uma boa instrução processual no IFAM (Instituto Federal do Amazonas) é essencial para garantir que os processos administrativos, acadêmicos e institucionais ocorram de forma transparente, eficiente e padronizada, e com redução de falhas administrativas.</p>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>What (O quê?)</strong></h4>
+                                    <p>Site interativo para o auxílio aos servidores da PROAD no entendimento de instrução processual e tramitação, permitindo clareza no passo a passo a serem seguidos em cada processo.</p>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>Where (Onde?)</strong></h4>
+                                    <p>Reitoria do IFAM.</p>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>When (Quando?)</strong></h4>
+                                    <p>Durante a disciplina de gestão de produção e qualidade.</p>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>Who (Quem?)</strong></h4>
+                                    <p>Equipe GOAT's e os servidores da reitoria do IFAM.</p>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>How (Como?)</strong></h4>
+                                    <div class="project-steps">
+                                        <h5>Etapas do Projeto</h5>
+                                        <ol class="steps-list">
+                                            <li>
+                                                <strong>Reunião com os servidores da Reitoria</strong>
+                                                <p>Levantamento de requisitos.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Análise e seleção dos requisitos</strong>
+                                                <p>Identificação dos requisitos funcionais e não funcionais.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Modelagem do software</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Prototipação</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Apresentação do protótipo</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Ajustes e incrementos</strong>
+                                                <p>Inclusão das recomendações recebidas após a apresentação do protótipo.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Desenvolvimento</strong>
+                                                <p>Utilizando a metodologia <em>Scrum</em> com suporte do <em>Kanban</em>.</p>
+                                            </li>
+                                            <li>
+                                                <strong>Apresentação da versão final</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Implementação do sistema</strong>
+                                            </li>
+                                            <li>
+                                                <strong>Análise dos resultados</strong>
+                                                <p>Elaboração e divulgação de artigo sobre as melhorias aplicadas na tramitação processual do IFAM.</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+
+                                <div class="w2h-item">
+                                    <h4><strong>How much (Quanto?)</strong></h4>
+                                    <p>Investimento: R$ 20.000,00 mensais por desenvolvedor.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- Item da Linha do Tempo 3 -->
@@ -143,6 +230,42 @@
             </div>
         </section>
 
+        <!-- Seção Artigo -->
+        <!-- <section id="artigo">
+            <div class="container">
+                <h2 class="section-title">ARTIGO CIENTÍFICO</h2>
+                <div class="divider"></div>
+                <p>
+                    Como resultado deste projeto, desenvolvemos um artigo científico que documenta todo o processo de criação 
+                    e implementação do sistema de instrução processual para o IFAM. O artigo aborda desde a identificação 
+                    do problema até a análise dos resultados obtidos.
+                </p>
+                <p>
+                    O documento apresenta a metodologia utilizada, os resultados alcançados e as melhorias implementadas 
+                    na tramitação processual da instituição, contribuindo para a literatura acadêmica na área de 
+                    gestão de qualidade em software.
+                </p>
+                <a href="#" class="btn" aria-label="Visualizar artigo científico">Ver Artigo</a>
+            </div>
+        </section> -->
+
+        <!-- Seção Contato -->
+        <!-- <section id="contato">
+            <div class="container">
+                <h2 class="section-title">ENTRE EM CONTATO</h2>
+                <div class="divider dark"></div>
+                <p>
+                    Tem alguma dúvida sobre o projeto ou gostaria de saber mais sobre nossa metodologia? 
+                    Entre em contato conosco!
+                </p>
+                <div class="contact-info">
+                    <a href="mailto:equipegoats@ifam.edu.br">equipegoats@ifam.edu.br</a>
+                    <p class="contact-detail">Instituto Federal do Amazonas - IFAM</p>
+                    <p class="contact-detail">Disciplina: Gestão de Produção e Qualidade de Software</p>
+                </div>
+            </div>
+        </section> -->
+
     </main>
     
     <!-- Rodapé -->
@@ -152,5 +275,6 @@
         </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 </html>
