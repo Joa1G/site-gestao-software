@@ -1,0 +1,35 @@
+1. Plano de Manutenção Continuada (Sustentação)
+Esta seção define as rotinas necessárias para manter a infraestrutura (Render/Vercel) ativa e segura, garantindo que o sistema suporte o tráfego inicial do piloto PROAD.
+1.1. Manutenção Preventiva (Diária e Semanal)
+Monitoramento de Disponibilidade (Uptime): Verificação diária para garantir que a API no Render não entrou em estado de suspensão, mantendo o plano pago ativo para evitar lentidão no primeiro acesso.
+Verificação de Backups: Conferência semanal dos backups automáticos do banco de dados PostgreSQL gerenciado. Embora o serviço gerenciado inclua backups, recomenda-se uma rotina de validação para garantir a integridade dos dados dos processos administrativos.
+Renovação de Certificados: Monitoramento da renovação automática dos certificados SSL (Let's Encrypt) pela Vercel e Render para garantir a conexão HTTPS segura.
+1.2. Manutenção Adaptativa (Mensal)
+Atualização de Dependências: Revisão mensal das bibliotecas do frontend (React) e do backend (FastAPI/Python) para aplicar patches de segurança e compatibilidade.
+Revisão de Custos de Nuvem: Auditoria semestral do consumo de recursos. O objetivo é manter os custos dentro da estimativa de R$ 83,00 a R$ 103,00 mensais, verificando se o tráfego não excedeu a previsão inicial de 250 a 4000 visitas.
+1.3. Manutenção Administrativa (Anual)
+Renovação de Domínio: Pagamento anual da taxa de R$ 40,00 ao Registro.br para manutenção do domínio ifflow.com.br.
+Reavaliação de Contrato de Hospedagem: Análise anual para decidir se o plano "Starter" do Render ainda atende ou se é necessário migrar para um VPS dedicado (como DigitalOcean) caso o custo-benefício mude.
+
+2. Cronograma de Execução das Melhorias
+Este cronograma cobre o próximo semestre, focado em transformar o projeto piloto em uma ferramenta institucional completa, conforme as fases de expansão e funcionalidades citadas no documento (Chatbot e Dashboards).
+Fase 1: Estabilização do Piloto (Meses 1 e 2)
+Foco: Garantir estabilidade para os servidores da PROAD (50-200 usuários).
+Ação 1 (Monitoramento de Performance): Configuração de alertas de uso de CPU e RAM no Render. Como o plano básico tem limites de hardware (ex: 1 vCPU), é crucial monitorar se os 6 processos mais acessados causam gargalo.
+Ação 2 (Correção de Bugs): Período dedicado exclusivamente à manutenção corretiva baseada no feedback dos primeiros usuários da PROAD.
+Fase 2: Implementação de Novas Funcionalidades (Meses 3 e 4)
+Foco: Agregar valor para a gestão e suporte ao usuário, conforme sugerido para o engajamento.
+Ação 1 (Dashboards de BI): Desenvolvimento e deploy de painéis para gestores visualizarem métricas dos processos. Isso exigirá otimização de consultas no banco PostgreSQL para não elevar os custos de processamento.
+Ação 2 (Integração de Chatbot): Implementação de um assistente virtual simples para tirar dúvidas sobre fluxos e documentos, reduzindo a carga de suporte humano.
+Fase 3: Preparação para Expansão Institucional (Meses 5 e 6)
+Foco: Escalar a infraestrutura para suportar o restante do IFAM (300-1000 usuários potenciais).
+Ação 1 (Upgrade de Banco de Dados): Avaliação de migração do plano de banco de dados caso o volume de dados históricos cresça muito com a adesão de novos setores.
+Ação 2 (Testes de Carga): Simulação de tráfego para verificar se a arquitetura suporta picos de 15.000 visitas/mês, previstos na fase de expansão institucional.
+
+3. Resumo de Recursos Necessários
+Para executar este plano, serão mantidos os serviços contratados:
+Domínio: Registro.br (.com.br).
+Frontend: Vercel (Plano Gratuito/Hobby).
+Backend & Banco de Dados: Render (Plano Starter Web Service + Starter PostgreSQL).
+Ferramentas de Gestão: GitHub para versionamento e controle de tarefas (Issues/Projects
+

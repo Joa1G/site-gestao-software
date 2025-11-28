@@ -1,0 +1,25 @@
+Relação da OHSAS 18001 com o Produto Final (IFFLOW)
+Abordagem Integrada: Gestão, Saúde Mental e Confiabilidade Técnica
+1. Contextualização Normativa
+A norma OHSAS 18001 é pertinente ao contexto de sistemas de gestão, pois define "dano para a saúde" como qualquer condição física ou mental adversa resultante do trabalho. Isso abrange diretamente riscos psicossociais, como o estresse ocupacional ocasionado por sobrecarga, falta de clareza ou ausência de controle sobre atividades.
+O sistema IFFLOW contribui para a prevenção desses danos ao oferecer funcionalidades que tornam o trabalho administrativo mais previsível, transparente e organizado, mitigando fatores geradores de estresse.
+2. Alinhamento Funcional com a OHSAS 18001
+Conforme identificado na análise preliminar, o sistema atende aos princípios da norma através de:
+Redução da Ambiguidade (Clareza de Papéis): A plataforma estrutura fluxos e documentação, combatendo a falta de clareza sobre responsabilidades, um dos principais gatilhos de estresse.
+Comunicação Centralizada: Ao unificar históricos e status de tarefas, o sistema elimina ruídos e falhas de comunicação, reduzindo o atrito entre equipes.
+Controle de Carga de Trabalho: O uso de cronogramas e acompanhamento visual permite que gestores identifiquem sobrecargas e realizem ajustes preventivos antes que o colaborador seja afetado.
+3. Complemento Técnico: Confiabilidade como Fator de Saúde (SST)
+Além das funcionalidades de gestão, a Engenharia de Software aplicada ao projeto atua como barreira preventiva contra o estresse tecnológico:
+Disponibilidade e Controle (Mitigação de Frustração): A infraestrutura baseada em nuvem (Render/Vercel) com monitoramento de uptime garante que o sistema esteja acessível quando necessário. A instabilidade sistêmica (sistema "fora do ar") é classificada como um fator de perda de controle, gerando ansiedade imediata no usuário. A alta disponibilidade devolve a sensação de controle ao servidor público.
+Performance e Tempo de Resposta: A otimização do banco de dados PostgreSQL e da API FastAPI assegura respostas rápidas. A lentidão sistêmica é um fator ergonômico negativo que aumenta a carga cognitiva e a fadiga mental ao final do expediente.
+4. Monitoramento e Melhoria Contínua (PDCA)
+O sistema incorpora o ciclo PDCA exigido pela norma:
+Monitoramento: Alertas e indicadores (KPIs) permitem detectar gargalos e atrasos.
+Ação Corretiva: O sistema fornece dados para que ações sejam tomadas antes que o acúmulo de tarefas se torne uma fonte crítica de estresse.
+5. Preparação e Resposta a Emergências (Requisito 4.4.7)
+Embora a norma foque em emergências físicas, no contexto digital, a "emergência" é a perda de dados.
+Segurança Psicológica: A implementação de rotinas de backup robustas e planos de recuperação de desastres (Disaster Recovery) garante ao usuário a segurança de que seu trabalho não será perdido, eliminando o medo e a insegurança no trabalho administrativo.
+6. Conclusão
+O produto final vai além de uma ferramenta de gestão; ele atua como um EPI (Equipamento de Proteção Individual) Digital. Ao reduzir a incerteza , facilitar a comunicação e garantir a estabilidade técnica, o sistema promove um ambiente de trabalho com menor risco psicossocial, fortalecendo a conformidade com os requisitos de saúde mental previstos na OHSAS 18001.
+
+
